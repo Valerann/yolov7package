@@ -78,5 +78,5 @@ coco_class_names = [
 "scissors",
 "teddy bear",
 "hair drier",
-"toothbrush
+"toothbrush"
 ]
