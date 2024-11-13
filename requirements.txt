@@ -6,8 +6,8 @@ Pillow>=7.1.2
 PyYAML>=5.3.1
 requests>=2.23.0
 scipy>=1.4.1
-torch>=1.7.0+cpu,<=2.2.2+cpu
-torchvision>=0.8.1+cpu,<0.18.0+cpu
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
 tqdm>=4.41.0
 # protobuf<4.21.3
 
