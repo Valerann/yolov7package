@@ -13,7 +13,21 @@ def get_long_description():
 
 def get_requirements():
     with open("requirements.txt") as f:
-        return f.read().splitlines()
+        _install_requires = f.read().splitlines()
+
+    # remove comments
+    install_requires = []
+    for req in _install_requires:
+        if req.startswith("--"):
+            continue
+        idx = req.find("#")
+        if idx == -1:
+            install_requires.append(req)
+        else:
+            req = req[:idx]
+            if req:
+                install_requires.append(req)
+    return install_requires
 
 
 def get_version():
